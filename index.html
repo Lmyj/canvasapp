@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/container.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/shape.js"></script>
+    <script src="js/canvas.js"></script>
+</head>
+<body>
+<div class="container">
+    <ul class="menu">
+        <li class="parent hasson">
+            <div>文件</div>
+            <ul class="son">
+                <li data-role="new">新建</li>
+                <li data-role="back">后退</li>
+                <li data-role="save">保存</li>
+            </ul>
+        </li>
+        <li  class="parent hasson">
+            <div>画笔形状</div>
+            <ul class="son">
+                <li data-role="line">线</li>
+                <li data-role="rect">矩形</li>
+                <li data-role="arc">圆</li>
+                <li data-role="pen">铅笔</li>
+                <li data-role="five">五角星</li>
+            </ul>
+        </li>
+        <li  class="parent hasson">
+            <div>类型</div>
+            <ul class="son">
+                <li data-role="stroke">画线</li>
+                <li data-role="fill">填充</li>
+            </ul>
+        </li>
+        <li  class="parent hasson">
+            <div>线条宽度</div>
+            <ul class="son">
+                <li data-role="1">细</li>
+                <li data-role="3">中</li>
+                <li data-role="6">粗</li>
+            </ul>
+        </li>
+        <li  class="parent hasson">
+            <div>橡皮</div>
+            <ul class="son">
+                <li data-role="8">小</li>
+                <li data-role="12">中</li>
+                <li data-role="16">大</li>
+            </ul>
+        </li>
+        <li  class="parent">
+            <div class="select">选择</div>
+        </li>
+    </ul>
+    <div class="bigbox">
+        <div class="leftGong">
+            <div title="线条颜色" class="bdcolor">
+                <span class="colorcon">线条颜色</span>
+                <input type="color" class="colsty">
+            </div>
+            <div title="填充颜色" class="fillcolor">
+                <span class="colorcon">填充颜色</span>
+                <input type="color" class="colsty">
+            </div>
+            <div class="xianshi parent hasson">
+                <ul class="son spail">
+                    <li class="show-con"></li>
+                    <li class="show-con"></li>
+                    <li class="show-con"></li>
+                    <li class="show-con"></li>
+                    <li class="show-con"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="copy"></div>
+            <canvas></canvas>
+            <div class="xp"></div>
+            <div class="selectall"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+</body>
+</html>
